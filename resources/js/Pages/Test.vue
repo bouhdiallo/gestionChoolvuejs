@@ -43,76 +43,14 @@
       </li>
 
       <!-- Messages Dropdown Menu -->
-      <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-comments"></i>
-          <span class="badge badge-danger navbar-badge">3</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <!-- <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle"> -->
-              <img :src="userImage1"  alt="User Avatar" class="img-size-50 mr-3 img-circle">
-
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Brad Diesel
-                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">Call me whenever you can...</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <!-- <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3"> -->
-              <img :src="userImage2"  alt="User Avatar" class="img-size-50 img-circle mr-3">
-
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  John Pierce
-                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">I got your message bro</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <!-- <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3"> -->
-              <img :src="userImage3"  alt="User Avatar" class="img-size-50 img-circle mr-3">
-
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Nora Silvester
-                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">The subject goes here</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
-        </div>
-      </li>
+     
       <!-- Notifications Dropdown Menu -->
-      <li class="nav-item dropdown">
+      <!-- <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
           <i class="far fa-bell"></i>
           <span class="badge badge-warning navbar-badge">15</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+        </a> -->
+        <!-- <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
           <span class="dropdown-header">15 Notifications</span>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
@@ -131,8 +69,8 @@
           </a>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-        </div>
-      </li>
+        </div> -->
+      <!-- </li> -->
       <li class="nav-item">
         <a class="nav-link" data-widget="fullscreen" href="#" role="button">
           <i class="fas fa-expand-arrows-alt"></i>
@@ -151,8 +89,8 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
-      <!-- <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> -->
-      <img :src="adminLogo" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <img src="~admin-lte/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <!-- <img :src="adminLogo" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> -->
 
       <span class="brand-text font-weight-light">AdminLTE 3</span>
     </a>
@@ -162,8 +100,8 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <!-- <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image"> -->
-          <img :src="userImage" class="img-circle elevation-2" alt="User Image">
+          <img src="~admin-lte/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <!-- <img :src="userImage" class="img-circle elevation-2" alt="User Image"> -->
 
         </div>
         <div class="info">
@@ -172,7 +110,7 @@
       </div>
 
       <!-- SidebarSearch Form -->
-      <div class="form-inline">
+      <!-- <div class="form-inline">
         <div class="input-group" data-widget="sidebar-search">
           <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
           <div class="input-group-append">
@@ -181,7 +119,7 @@
             </button>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
@@ -236,12 +174,12 @@
           <div class="col-sm-6">
             <h1 class="m-0">Starter Page</h1>
           </div><!-- /.col -->
-          <div class="col-sm-6">
+          <!-- <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item active">Starter Page</li>
             </ol>
-          </div><!-- /.col -->
+          </div> -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
@@ -250,9 +188,9 @@
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="card">
+        <!-- <div class="row"> -->
+          <!-- <div class="col-lg-6"> -->
+            <!-- <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
 
@@ -264,8 +202,8 @@
                 <a href="#" class="card-link">Card link</a>
                 <a href="#" class="card-link">Another link</a>
               </div>
-            </div>
-
+            </div> -->
+<!-- 
             <div class="card card-primary card-outline">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -277,11 +215,11 @@
                 <a href="#" class="card-link">Card link</a>
                 <a href="#" class="card-link">Another link</a>
               </div>
-            </div><!-- /.card -->
-          </div>
+            </div> -->
+          <!-- </div> -->
           <!-- /.col-md-6 -->
-          <div class="col-lg-6">
-            <div class="card">
+          <!-- <div class="col-lg-6"> -->
+            <!-- <div class="card">
               <div class="card-header">
                 <h5 class="m-0">Featured</h5>
               </div>
@@ -291,9 +229,9 @@
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
-            </div>
+            </div> -->
 
-            <div class="card card-primary card-outline">
+            <!-- <div class="card card-primary card-outline">
               <div class="card-header">
                 <h5 class="m-0">Featured</h5>
               </div>
@@ -303,10 +241,10 @@
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
-            </div>
-          </div>
+            </div> -->
+          <!-- </div> -->
           <!-- /.col-md-6 -->
-        </div>
+        <!-- </div> -->
         <!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
@@ -343,16 +281,16 @@
 import 'admin-lte/plugins/fontawesome-free/css/all.css';
 import 'admin-lte/dist/css/adminlte.css';
 export default {
-  data() {
-    return {
-      userImage1: '@admin-lte-img/user1-128x128.jpg', // Utilise l'alias défini
-      userImage2: '@admin-lte-img/user8-128x128.jpg',
-      userImage3: '@admin-lte-img/user3-128x128.jpg',
-      adminLogo: '@admin-lte-img/AdminLTELogo.png', // Utilisation de l'alias pour le logo
-      userImage: '@admin-lte-img/user2-160x160.jpg', // Utilisation de l'alias
+//   data() {
+//     return {
+//       userImage1: '@admin-lte-img/user1-128x128.jpg', 
+//       userImage2: '@admin-lte-img/user8-128x128.jpg',
+//       userImage3: '@admin-lte-img/user3-128x128.jpg',
+//       adminLogo: '@admin-lte-img/AdminLTELogo.png', 
+//       userImage: '@admin-lte-img/user2-160x160.jpg', 
 
 
-    };
-  },
+//     };
+//   },
 };
 </script>
