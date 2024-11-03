@@ -6,9 +6,13 @@ import path from 'path'; // Importer le module path
 export default defineConfig({
     resolve: {
         alias: {
-            '@admin-lte-img': path.resolve(__dirname, 'node_modules/admin-lte/dist/img'), // Créer un alias pour le dossier des images
+            '@admin-lte-img': path.resolve(__dirname, 'node_modules/admin-lte/dist/img'), 
+            'ziggy-js': path.resolve('vendor/tightenco/ziggy'),
+            // Créer un alias pour le dossier des images
         },
     },
+
+   
     plugins: [
         laravel({
             input: ['resources/css/app.css', 'resources/js/app.js'],
@@ -17,3 +21,5 @@ export default defineConfig({
         vue(),
     ],
 });
+
+
