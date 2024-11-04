@@ -7,7 +7,7 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1 class="m-0"> mon contenu 2 </h1>
+                <h1 class="m-0"> Ma page home </h1>
               </div><!-- /.col -->
             
             </div><!-- /.row -->
@@ -18,7 +18,7 @@
         <!-- Main content -->
         <div class="content">
           <div class="container-fluid">
-           <h1> Ma page contact</h1>
+           <h1> Accueil</h1>
           </div><!-- /.container-fluid -->
         </div>
         
