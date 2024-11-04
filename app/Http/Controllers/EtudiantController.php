@@ -11,7 +11,7 @@ class EtudiantController extends Controller
      */
     public function index()
     {
-        //
+        return Inertia("Etudiant/Index");
     }
 
     /**
@@ -19,7 +19,8 @@ class EtudiantController extends Controller
      */
     public function create()
     {
-        //
+              return Inertia("Etudiant/Create");
+
     }
 
     /**

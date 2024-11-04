@@ -11,7 +11,8 @@ class NiveauScolaireController extends Controller
      */
     public function index()
     {
-        //
+        return Inertia("NiveauScolaire/Index");
+
     }
 
     /**

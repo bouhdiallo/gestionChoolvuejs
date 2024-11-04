@@ -33,7 +33,7 @@
     <script>
     
     
-    import MainLayout from '../Layouts/MainLayout.vue';
+    import MainLayout from '../../Layouts/MainLayout.vue';
     
     export default {
     
