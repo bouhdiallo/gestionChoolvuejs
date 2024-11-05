@@ -127,7 +127,7 @@
                 </Link>
               </li>
               <li class="nav-item">
-                <Link :href="route('etudiant.create')" class="nav-link" :class=" { 'active' : $page.component = 'Etudiant/Create' }">
+                <Link :href="route('etudiant.create')" class="nav-link " :class=" { 'active' : $page.component = 'Etudiant/Create' }">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Nouveau</p>
                 </Link>
