@@ -28,6 +28,4 @@ Route::get('/etudiant', [EtudiantController::class, "index"])->name("etudiant.in
 
 Route::get("/etudiant/create", [EtudiantController::class, "create"])->name("etudiant.create");
 
-
-
 Route::get("/niveauscolaire", [NiveauScolaireController::class, "index"])->name("niveauscolaire.index");
