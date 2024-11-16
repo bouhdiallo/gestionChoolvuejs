@@ -26,13 +26,14 @@
                 <h3 class="card-title">Simple Full Width Table</h3>
 
                 <div class="card-tools">
-                  <ul class="pagination pagination-sm float-right">
-                    <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-                  </ul>
+              
+
+                  <Pagination  
+                  :links="props.niveauScolaires.link" 
+                  :prev="props.niveauScolaires.prev_page_url"
+                  :next="props.niveauScolaires.next_page_url"
+                    />
+
                 </div>
               </div>
               <!-- /.card-header -->
@@ -46,14 +47,10 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr v-for="niveauScolaire in props.niveauScolaires">
+                    <tr v-for="niveauScolaire in props.niveauScolaires.data">
                       <!-- <td>1.</td> -->
                       <td> {{ niveauScolaire.nom }}</td>
-                      <!-- <td>
-                        <div class="progress progress-xs">
-                          <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                        </div>
-                      </td> -->
+                      
                       <td>
                         <div class="d-flex">
                         <button class="btn btn-info mr-4"><i class="fas fa-pen" aria-hidden="true"></i>
@@ -94,15 +91,11 @@
     
     </script> -->
     
-    
-    
     <script setup>
         import MainLayout from '../../Layouts/MainLayout.vue';
-        
-
-
+        import Pagination from '../../Shared/Pagination.vue';
     const props = defineProps({
-            niveauScolaires: Array
+            niveauScolaires: Object
     })
     
     </script>
