@@ -23,7 +23,11 @@
             <div class="col-md-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Simple Full Width Table</h3>
+                <div class="card-title">
+
+                <CreateNiveauScolaire/>
+
+                </div>
 
                 <div class="card-tools">
               
@@ -77,23 +81,16 @@
     
         
     </template>
-    
-    
     <!-- <script >
-    
-    
     import MainLayout from '../../Layouts/MainLayout.vue';
-    
     export default {
-    
         layout: MainLayout 
     }
-    
     </script> -->
-    
     <script setup>
         import MainLayout from '../../Layouts/MainLayout.vue';
         import Pagination from '../../Shared/Pagination.vue';
+        import CreateNiveauScolaire from './CreateNiveauScolaire.vue';
     const props = defineProps({
             niveauScolaires: Object
     })

@@ -12,8 +12,8 @@ class NiveauScolaireController extends Controller
      */
     public function index()
     {
-        $niveauScolaires = NiveauScolaire::orderBy("nom", "ASC")->paginate(2);
-        return Inertia("NiveauScolaire/Index", [ 
+        $niveauScolaires = NiveauScolaire::latest()->paginate(3);
+        return Inertia("NiveauScolaire/IndexNiveauScolaire", [ 
             "niveauScolaires" =>$niveauScolaires
         ]);
 
@@ -33,8 +33,15 @@ class NiveauScolaireController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request ->validate(["nom" => "required"]);
+
+        NiveauScolaire::create([ "nom" => $request->nom]);
+
+        return redirect()->back();
+
     }
+
+    
 
     /**
      * Display the specified resource.
